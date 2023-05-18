@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="view.css">
+    <title>With 자취생을 위한 커뮤니티 - 인테리어</title> 
+  </head>
+  <body>
+    <header>
+      <div class="links">
+         <a href="login.html" class="link_text">로그인</a>
+         <a href="signup.html" class="link_text">회원가입</a>
+         <a href="help.html" class="link_text">문의</a>
+      </div>
+      <a href="index.html"><img src="Logo.png" class="img_logo"></a>
+      <form>
+         <fieldset>
+            <legend class="visually-hidden">검색</legend>
+            <div class="search_box">
+               <input type="text" maxlength="225" tabindex="1">
+               <button type="submit" tabindex="2">
+                 검색
+               </button>
+            </div>
+         </fieldset>
+      </form>
+      <nav>
+         <div class="nav_items">
+            <ul id="main-menu">
+               <li><a>커뮤니티</a>
+                 <ul id="sub-menu">
+                  <li><a href="tip_board.html" aria-label="subemnu">자취 노하우</a></li>
+                  <li><a href="int_board.html" aria-label="subemnu">인테리어</a></li>
+                  <li><a href="cook_board.html" aria-label="subemnu">요리</a></li>
+                 </ul>
+               </li>
+               <li><a>스토어</a>
+                 <ul id="sub-menu">
+                  <li><a href="purchase.html" aria-label="subemnu">공동 구매</a></li>
+                  <li><a href="resell.html" aria-label="subemnu">중고 거래</a></li>
+                 </ul>
+               </li>
+               <li><a href="help.html">Q & A</a> </li>
+            </ul>
+            <div class="day">
+             <h3 id="clock" style=" color: #00D0FA;">clock</h1>
+    
+    <script>
+        var Target = document.getElementById("clock");
+        function clock() {
+            var time = new Date();
+
+            var month = time.getMonth();
+            var date = time.getDate();
+            var day = time.getDay();
+            var week = ['일', '월', '화', '수', '목', '금', '토'];
+
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+
+            Target.innerText = 
+            `${month + 1}월 ${date}일 ${week[day]}요일 ` +
+            `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}`;
+                
+        }
+        clock();
+        setInterval(clock, 1000); // 1초마다 실행
+    </script>
+   
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <main>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>인테리어</strong>
+            <p>자신만의 인테리어를 자랑하고 관련 정보를 공유해보세요</p>
+        </div>
+        <div class="board_view_wrap">
+            <div class="board_view">
+                <div class="title">
+                    페인트 기본지식과 가격
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>번호</dt>
+                        <dd>4</dd>
+                    </dl>
+                    <dl>
+                        <dt>작성자</dt>
+                        <dd>홍길동</dd>
+                    </dl>
+                    <dl>
+                        <dt>작성일</dt>
+                        <dd>2021.11.15</dd>
+                    </dl>
+                    <dl>
+                        <dt>조회</dt>
+                        <dd>506</dd>
+                    </dl>
+                </div>
+                <div class="cont">
+                    페인트칠 하기 전에 알아야 점<br>
+                    1. 젯소 칠<br>
+                    2. 페인트칠 횟수 - 2~3회 <br>
+                    3. 마스킹테 이프와 커버링 테이프 사용하기<br>
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <a href="int_board.html" class="on">목록</a>
+            </div>
+        </div>
+    </div>
+   </main>
+   <footer>
+      <div class="foot">
+      <a href="help.html" style="font-size: 8px;"><h1> 고객센터 ></h1>
+      <h1 style="font-family:sans-serif; font-size: 18px;"> 1234-5678 </h1></a>
+      <h2> 평일 9:00 ~ 18:00(주말&공휴일 제외) </h2>
+      <hr>
+      <p> 브랜드 스토리  회사소개 채용정보 이용약관 개인정보처리방침 공지사항 고객센터 고객의 소리 전문가 등록 사업자 구매회원 제휴/광고 문의 입점신청 문의  </p>
+      <hr>
+      <p> 상호명 : 자취생을 위한 커뮤니티 이메일:(고객문의)with@mnu.ac.kr </p>
+      <p> 자취생을 위한 커뮤니티는 자취생들이 의사소통을 하기 위한 사이트이며, 통신판매중개자로 거래 당사자가 아니므로, 판매자가 등록한 상품정보 및 거래 등에 대해 일체 책임을 지지 않습니다.</p>
+      </div>
+   </footer>
+  </body>
+</html>

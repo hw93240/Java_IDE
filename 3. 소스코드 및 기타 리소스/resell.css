@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+#content_box {
+	padding-top: 80px;
+	display: flex;
+}
+
+#content_box h1 {
+	float: left;
+	margin-left: 500px;
+	color: #00D0FA; /* 파란색 */
+}
+
+.box {
+	width: 1320px;
+	margin: 0 auto;
+}
+
+.items {
+	width: 236px;
+	float: left;
+	margin: 50px 0 20px 26px;
+}
+
+.items .iname {
+	font-weight: bold;
+	color: black;
+	margin-top: 20px;
+}
+
+.items .iprice {
+	font-weight: bold;
+	color: black;
+	margin-top: 8px;
+}
+
+.items .iheart {
+	font-size: 14px;
+	margin-top: 18px;
+	line-height: 120%;
+	color: darkgray;
+}

@@ -1,0 +1,282 @@
+* {
+      box-sizing: border-box; /* 길이계산을 편하게 하기 위함 */
+     }
+
+     body {
+        /* margin: 0; /* body의 기본 마진을 없애줌(선택사항) */
+        padding: 0;
+        font-family: sans-serif;
+        display: flex;
+        flex-flow: column nowrap; 
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+     }
+     nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        background: #ffffff; /* 흰색 */
+     }
+     a{
+        text-decoration: none; /* 기본 밑줄 제거 */
+        color: black; 
+     }
+     /*
+     a:visited{
+        color:#888; /* visited link  
+     } */
+     
+     a:hover {
+      color:#00D0FA; /* mouse over link */
+     }
+     header {
+        margin: auto; /* header의 양쪽 여백을 동등하게 정렬 */
+        width: 1080px;
+        height: 215px;
+        display: flex;
+        align-items: center;
+        position: relative;
+     }
+     fieldset {
+        border: none; /* 기본 border 없애기 */
+     }
+     .visually-hidden { /* legend 안보이게 설정 */
+        position: absolute !important;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        white-space: nowrap;
+     }
+     .links { /* 링크들을 상단 우측에 위치 */
+        position: absolute;
+        top: 10px;
+        right: 5px;
+     }
+     .link_text {
+        font-size: 15px;
+        margin-left: 8px;
+     }
+     .blog{
+        position: absolute;
+        top: 300px;
+        left: 1810px;
+        width: 300px;
+        height: 100px;
+     }
+      .cook{
+        position: absolute;
+        top: 450px;
+        left: 1810px;
+        width: 200px;
+        height: 100px;
+      }
+      .insta{
+         position: absolute;
+        top: 600px;
+        left: 1810px;
+        width: 300px;
+        height: 180px;
+      }
+
+
+     .img_logo {
+        margin-bottom: 12px;
+        position: absolute;
+        top: 80px;
+        left: 30px;
+        width: 390px;
+        height: 60px;
+     }
+     .search_box {
+        position: absolute;
+        top: 100px;
+        right: 10px;
+        width: 300px;
+        height: 40px;
+        border: 2px solid #00D0FA; /* 파란색 */
+        display: flex;
+        align-items: space-between;
+     }
+     .search_box input {
+        flex: 8; /* 박스 내부에서 9만큼의 크기를 차지(비율) */
+        height: 36px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+     }
+     .search_box button {
+        flex: 2; /* 박스 내부에서 1만큼의 크기를 차지(비율) */
+        height: 36px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        background: #00D0FA; /* 파란색 */
+        color: #ffffff; /* 흰색 */
+     }
+      
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  /* knowhow image */
+  .knowhow {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* store image*/
+  .store {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+@media screen and (max-width: 800px){
+  .leftcolumn, rightcolumn{
+    width: 100%;
+    padding: 0;
+    }
+  }
+
+     /* menu */
+     ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    #main-menu > li {
+      float: left;
+      position: relative;
+    }
+
+    #main-menu > li > a {
+      font-size: 15px;
+      color: #00D0FA; /* 파란색 */
+      text-align: center;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      display: flex;
+      padding: 14px 36px;
+      text-shadow: 1px 1px 1px #f1f3f6; /* 연한회색 */
+    }
+
+    #sub-menu {
+      position: absolute;
+      margin: auto;
+      width: 1080px;
+      height: 75px;
+      background: white; /* 연한회색 */
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.15s ease-in;
+      display : flex;
+      font-size: 13px;
+    }
+
+    #sub-menu > li {
+      padding: 30px 28px;
+      /* border-bottom: 10px solid #00D0FA;  /*클릭 시 클릭한 리스트만 파란색 밑줄 사용   */
+    }
+
+    #sub-menu > li >  a {
+      color: #00D0FA; /* 파란색 */
+      text-decoration: none;
+    }
+
+    #main-menu > li:hover #sub-menu {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    #sub-menu > li >  a:hover {
+      text-decoration: underline;
+    }
+
+     /* nav */
+     header > nav {
+        width: 100%;
+        height: 45px;
+        position: absolute;
+        bottom: 0;
+     }
+     .nav_items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        font-weight: bold;
+        border-top: 3px solid #f1f3f6; /* 연한회색 */
+        border-bottom: 3px solid #f1f3f6; /* 연한회색 */
+     }
+     main {
+        background: white;
+        min-height: 700px;
+        margin: auto;
+        width: 1080px;
+     }
+     footer {
+        background: #fafafa;
+        height: 310px;
+        margin: auto; 
+        width: 1080px;
+        font-family: "Noto Sans KR", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", sans-serif;
+        font-weight: 400;
+     }
+     /* 재사용 클래스 */
+     .color_blue {
+        color: #00D0FA; /* 파란색 */
+     }
+
+     .foot{
+      width: 100%;
+      height: 70px;  
+      padding: 30px;
+
+     }
+
+     .foot p{
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 400;
+        color: #424242;
+        line-height: 16px;
+     }
+
+     .foot h2{
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 400;
+        color: #424242;
+        line-height: 16px;
+     }

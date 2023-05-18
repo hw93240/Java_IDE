@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head><title>자취생을 위한 커뮤니티 로그인</title></head>
+<meta charset='utf-8'>
+<body>
+<style>
+
+input[type=submit] {
+    width: 100%;
+    background-color: #00D0FA;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=reset] {
+    width: 100%;
+    background-color: #00D0FA;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=uid] {
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }  
+
+  input[type=password] {
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }  
+
+
+div {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+</style>
+
+
+<div>
+<pre>
+
+
+
+
+
+    
+<a href="index.html"><img src="Logo.png" class="img_logo"></a> 
+
+<form method="post" action="login.jsp">
+<input type="uid" name='uid' placeholder="아이디" required>
+<input type="password" name='passwd' placeholder="비밀번호" required>
+<id ='password_view' onclick="passwd_toggle()">
+<input type="submit" value='로그인'>
+
+<input type="reset" value='돌아가기'>
+
+
+
+
+</form>
+</pre>
+</div>
+</body>
+</html>

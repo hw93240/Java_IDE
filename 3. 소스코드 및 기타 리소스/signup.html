@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head><title>자취생을 위한 커뮤니티 회원가입</title></head>
+<meta charset='utf-8'>
+<style>
+
+h1{
+    font-family: sans-serif;
+    font-size: 20px;    
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 15px;    
+}
+
+h3{
+    font-family: sans-serif;
+    font-size: 10px;    
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #00D0FA;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=reset] {
+    width: 100%;
+    background-color: #00D0FA;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=uid] {
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }  
+
+  input[type=email] {
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }  
+
+  input[type=uname] {
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }  
+
+  input[type=uname2] {
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }  
+
+  input[type=password] {
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }  
+
+
+div {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+</style>
+<body>
+
+<div>
+<pre>
+
+
+
+
+
+    
+<a href="index.html"><img src="Logo.png" class="img_logo"></a> 
+
+<h1>회원가입</h1>
+<form method="post" action="signup.jsp">
+<h2>아이디</h2><input type="uid" name='uid' placeholder="아이디" required>
+<h2>비밀번호</h2><input type="password" name='passwd' placeholder="비밀번호" required>
+<id ='password_view' onclick="passwd_toggle()">
+<h2>닉네임</h2><h3 style = "color : grey">다른 유저와 겹치지 않는 별명을 입력해주세요.</h3><input type="uname" name='name' placeholder="별명" required>
+<h2>이름</h2><input type="uname2" name='name2' placeholder="이름" required>
+<h2>이메일</h2><input type="email" name='email' placeholder="이메일" required>
+
+<input type="submit" value='회원가입'>
+
+<input type="reset" value='돌아가기'>
+
+
+
+
+</form>
+</pre>
+</div>
+</body>
+</html>
